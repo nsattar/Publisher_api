@@ -1,0 +1,63 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Publisher_api",
+    "version" : "1.0.0",
+    "description" : "Publisher_api"
+  },
+  "paths" : {
+    "/ace_status" : {
+      "post" : {
+        "operationId" : "postAc_status",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/response"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a ace_status",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/ac_status"
+          },
+          "description" : "ace_status",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/publisher_api/v1",
+  "definitions" : {
+    "ac_status" : {
+      "type" : "object",
+      "properties" : {
+        "date" : {
+          "type" : "number"
+        },
+        "time" : {
+          "type" : "number"
+        },
+        "temp_degreeCelcius" : {
+          "type" : "integer"
+        }
+      }
+    },
+    "response" : {
+      "type" : "object",
+      "properties" : {
+        "statusCode" : {
+          "type" : "number"
+        },
+        "status" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
