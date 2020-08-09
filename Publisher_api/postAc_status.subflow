@@ -12,7 +12,7 @@
       <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output_1" location="620,27">
         <translation xmi:type="utility:TranslatableString" key="Output" bundleName="postAc_status" pluginId="Publisher_api"/>
       </nodes>
-      <nodes xmi:type="com_ibm_connector_kafka_ComIbmOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="217,107" connectorName="Kafka" topicName="test-topic" bootstrapServers="eventstreams-kafka-bootstrap-integration.gsidemos-7ec5d722a0ab3f463fdc90eeb94dbc70-0000.us-south.containers.appdomain.cloud:443" clientId="ace-consumer" useClientIdSuffix="true" acks="all" timeout="60" securityIdentity="myKafkaSecId" securityProtocol="SASL_SSL" sslProtocol="TLSv1.2" validateMaster="inherit" validateFailureAction="exception"
+      <nodes xmi:type="com_ibm_connector_kafka_ComIbmOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="217,107" connectorName="Kafka" topicName="test-topic" bootstrapServers="eventstreams-kafka-bootstrap-integration.demos-7ec54732a0db3ff63fd590etb94dbc70-0000.us-south.containers.appdomain.cloud:443" clientId="ace-consumer" useClientIdSuffix="true" acks="all" timeout="60" securityIdentity="myKafkaSecId" securityProtocol="SASL_SSL" sslProtocol="TLSv1.2" validateMaster="inherit" validateFailureAction="exception"
           policyUrl="{kafka_policy}:kafka_policy">
         <translation xmi:type="utility:ConstantString" string="KafkaProducer"/>
       </nodes>
