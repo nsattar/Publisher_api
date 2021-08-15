@@ -73,8 +73,8 @@
 		
 	</distributionManagement>
 	<scm>
-		<url>git@github.com:awasthan/Publisher_api.git</url>
-		<connection>scm:git:git@github.com:awasthan/Publisher_api.git</connection>
+		<url>git@github.com:nsattar/Publisher_api.git</url>
+		<connection>scm:git:git@github.com:nsattar/Publisher_api.git</connection>
 	  <tag>HEAD</tag>
   </scm>	
 </project>
