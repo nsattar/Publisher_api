@@ -10,7 +10,7 @@ node () {
 	stage ('Publisher_API - Build') {
 	
 withMaven(
- maven: 'maven',
+ maven: 'maven3_10_0',
  mavenSettingsConfig: 'afb42767-7657-4aee-a3d2-08f83a568a05') {
       sh "mvn -f ${JOB_NAME}/pom.xml -B release:prepare release:perform"
  }
