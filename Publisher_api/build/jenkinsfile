@@ -12,7 +12,7 @@ node () {
 withMaven(
  maven: 'maven',
  mavenSettingsConfig: 'afb42767-7657-4aee-a3d2-08f83a568a05') {
-      sh "mvn -f ${JOB_NAME}/pom.xml -B release:prepare release:perform"
+      sh "mvn -f Publisher_api/pom.xml -B release:prepare release:perform"
  }
 }
 }
